@@ -3,77 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kirsten Yip's Academic Portfolio">
     <title>Kirsten Yip - Academic Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         nav {
-            background-color: #333;
-            padding: 1em;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        nav ul li {
-            margin-right: 20px;
-        }
-        nav ul li a {
+            background-color: black;
             color: white;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        header, footer {
-            background-color: #f4f4f4;
-            padding: 10px;
-            text-align: left;
-        }
-        footer {
+            padding: 15px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
-        footer div {
-            margin: 0;
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
         }
-        h1 {
-            margin-top: 20px;
-        }
-        .content {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
+        }
+        .about-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .about-section img {
+            max-width: 200px;
+            margin-left: 30px;
+            border-radius: 50%;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .text-section {
+            margin-top: 40px;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="left">
+            <a href="index.html">Kirsten Yip</a>
+        </div>
+        <div class="right">
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Professional Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
-    <header>
-        <h1>About Kirsten</h1>
-    </header>
+    <div class="container">
+        <section id="about" class="about-section">
+            <div class="about-text">
+                <h1>About Kirsten</h1>
+                <p>Kirsten Yip is a graduate student at Northeastern University’s Bouvé College of Health Sciences, pursuing her Master’s of Science in Human Movement and Rehabilitation Science.</p>
+                <p>Her research interests are in sports medicine and orthopaedics, specifically related to optimizing recovery and injury prevention in the knee joint.</p>
+                <p>She received her Bachelor of Health Sciences (Honours) from McMaster University.</p>
+            </div>
+            <img src="path-to-headshot.jpg" alt="Kirsten Yip Headshot">
+        </section>
 
-    <div class="content">
-        <p>Welcome to my academic portfolio. Here, you will find information about my professional experience, academic achievements, and ways to get in touch. I am committed to advancing knowledge and contributing to research in my field.</p>
+        <section id="education" class="text-section">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Health Sciences (Honours)</strong>, McMaster University (2019 – 2023)</p>
+            <p><strong>Minor in Psychology</strong></p>
+        </section>
+
+        <section id="experience" class="text-section">
+            <h2>Professional Experience</h2>
+            <p><strong>Optometric Assistant</strong>, Dr. Rita Louie and Dr. Benson Louie Optometrists (Oct 2023 – Present)</p>
+            <ul>
+                <li>Maintain patient records, organize appointment schedules, and manage contact lens dispensary.</li>
+                <li>Perform vision tests, counsel patients on contact lens care, and conduct imaging procedures.</li>
+            </ul>
+
+            <p><strong>Business Development and Marketing Associate</strong>, RBC Wealth Management – Dominion Securities (Apr 2022 – Present)</p>
+            <ul>
+                <li>Spearhead business development initiatives, design marketing materials, and manage prospective client opportunities.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="text-section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kirsten.yip@outlook.com">kirsten.yip@outlook.com</a></p>
+            <p>Phone: (647) 972-8129</p>
+        </section>
     </div>
-
-    <footer>
-        <div>Kirsten Yip</div>
-        <div>
-            <strong>Contact:</strong><br>
-            Email: <a href="mailto:kirsten.yip@example.com">kirsten.yip@example.com</a><br>
-            Phone: (123) 456-7890
-        </div>
-    </footer>
 </body>
 </html>
